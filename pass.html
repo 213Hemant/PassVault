@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesVault - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="pass.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+<body class= " bg-gray-100 text-white">
+  <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        PassVault
+      </div>
+        <ul>
+            <li><a href="index.html">LogOut</a></li>
+          </ul>
+        </nav>
+
+        <div class="my-5 bg-gray-100 flex flex-col items-center justify-center text-gray-800">
+        <div class="w-full max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
+          <h1 class="text-center text-3xl font-bold text-gray-800 mb-6">PassWord Manager</h1>
+      
+          <h2 class="text-center text-xl text-gray-600 mb-4">Your Passwords</h2>
+      
+          <div id="alert" class="bg-green-500 text-white text-sm font-semibold rounded-md py-3 px-6 mb-6 hidden shadow-lg flex items-center justify-between">
+            <p>Copied to clipboard!</p>
+            <!-- <button class="text-white ml-4 font-bold hover:text-gray-200 focus:outline-none">&times;</button> -->
+        </div>
+        
+      
+          <table class="table-auto w-full text-left text-gray-700 border-collapse mb-8">
+            <!-- <thead> -->
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2 border-b" id="website" >Website</th>
+                <th class="px-4 py-2 border-b"  id="Username">Username</th>
+                <th class="px-4 py-2 border-b"  id="password">PassWord</th>
+                <th class="px-4 py-2 border-b">Delete</th>
+              </tr>
+            <!-- </thead> -->
+            <!-- <tbody> -->
+              <!-- Example row (add dynamic rows here) -->
+              <!-- <tr>
+                <td class="px-4 py-2 border-b">example.com</td>
+                <td class="px-4 py-2 border-b">user123</td>
+                <td class="px-4 py-2 border-b">Some notes</td>
+                <td class="px-4 py-2 border-b text-red-500">Delete</td>
+              </tr> -->
+            <!-- </tbody> -->
+          </table>
+      
+          <h2 class="text-center text-xl text-gray-600 mb-4">Add Your Password</h2>
+          
+          <form action="/submit" method="post" class="space-y-4">
+            <!-- Website Input -->
+            <div class="flex flex-col">
+              <label for="website" class="text-sm font-medium text-gray-600">Website:</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                required
+                class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-300"
+              />
+            </div>
+      
+            <!-- Username Input -->
+            <div class="flex flex-col">
+              <label for="username" class="text-sm font-medium text-gray-600">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                required
+                class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-300"
+                />
+            </div>
+      
+            <!-- Password Input -->
+            <div class="flex flex-col">
+              <label for="password" class="text-sm font-medium text-gray-600">PassWord</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-300"
+                />
+            </div>
+      
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button
+              type="submit"
+                class="btn bg-gray-800 text-white font-medium px-6 py-2 rounded-md hover:bg-gray-700"
+                >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <script src="pass.js"></script>
+    </body>
+
+</html>
