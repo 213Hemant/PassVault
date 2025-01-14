@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* .lexend-<uniquifier>  */
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+
+
+.navbar {
+    display: flex;
+    ;
+    background-color: #444444;
+    color: white;
+    /* padding: 13px 25px; */
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: large;
+    margin: 23px;
+}
+
+.logo {
+    margin: 23px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    margin: 0px 13px;
+}
+
+/* li:hover {
+    color: yellowgreen;
+    cursor: default;
+} */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    cursor: default;  
+    color: yellowgreen;
+    
+}
+
+table,
+td,
+tr,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 6px 18px;
+
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto 23px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 21px, 0;
+}
+
+.btn {
+    padding: 8px 17px;
+    background-color: black;
+    color: white;
+    font-weight: 899;
+    border: 2px solid black;
+    margin: 30px 0;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.btnsm {
+    padding: 8px 17px;
+    background-color: black;
+    color: white;
+    font-weight: 899;
+    border: 2px solid grey;
+    /* margin: 30px 0; */
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+.copy {
+    cursor: pointer;
+}
+
+.copy:active {
+    cursor: pointer;
+    animation: blink 0.5s ease-out;
+
+}
+
+@keyframes blink {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgb(181, 181, 181);
+        /* Color when blinking */
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+/* Default hidden state for the alert */
+#alert {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the alert box */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's on top of other content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Styling for the alert content */
+  #alert .alert-content {
+    background-color: #fff; /* White background for content */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Optional: Styling for the message inside the alert */
+  #alert .alert-content p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Show the alert when it's triggered */
+  #alert.show {
+    display: block; /* Show the alert */
+  }
+  
