@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NotesVault - Your Personal Password Manager</title>
+    <title>PassVault - Your Personal Password Manager</title>
     <link rel="stylesheet" href="pass.css">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -28,36 +28,27 @@
       
           <div id="alert" class="bg-green-500 text-white text-sm font-semibold rounded-md py-3 px-6 mb-6 hidden shadow-lg flex items-center justify-between">
             <p>Copied to clipboard!</p>
-            <!-- <button class="text-white ml-4 font-bold hover:text-gray-200 focus:outline-none">&times;</button> -->
+           
         </div>
         
       
           <table class="table-auto w-full text-left text-gray-700 border-collapse mb-8">
-            <!-- <thead> -->
+           
               <tr class="bg-gray-200">
                 <th class="px-4 py-2 border-b" id="website" >Website</th>
                 <th class="px-4 py-2 border-b"  id="Username">Username</th>
                 <th class="px-4 py-2 border-b"  id="password">PassWord</th>
                 <th class="px-4 py-2 border-b">Delete</th>
               </tr>
-            <!-- </thead> -->
-            <!-- <tbody> -->
-              <!-- Example row (add dynamic rows here) -->
-              <!-- <tr>
-                <td class="px-4 py-2 border-b">example.com</td>
-                <td class="px-4 py-2 border-b">user123</td>
-                <td class="px-4 py-2 border-b">Some notes</td>
-                <td class="px-4 py-2 border-b text-red-500">Delete</td>
-              </tr> -->
-            <!-- </tbody> -->
+           
           </table>
       
-          <h2 class="text-center text-xl text-gray-600 mb-4">Add Your Password</h2>
+          <h2 class="text-center text-xl text-gray-600 mb-4">Add Your Password: </h2>
           
           <form action="/submit" method="post" class="space-y-4">
             <!-- Website Input -->
             <div class="flex flex-col">
-              <label for="website" class="text-sm font-medium text-gray-600">Website:</label>
+              <label for="website" class="text-sm font-medium text-gray-600">Website: </label>
               <input
                 type="text"
                 id="website"
@@ -69,7 +60,7 @@
       
             <!-- Username Input -->
             <div class="flex flex-col">
-              <label for="username" class="text-sm font-medium text-gray-600">Username:</label>
+              <label for="username" class="text-sm font-medium text-gray-600">Username: </label>
               <input
                 type="text"
                 id="username"
