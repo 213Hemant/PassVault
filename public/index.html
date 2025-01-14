@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PassVault - Your Personal Password Manager</title>
+        <link rel="stylesheet" href="pass.css">
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="fire.js" defer></script>
+        
+    </head>
+    
+    <body>
+        <!-- Main Container -->
+        <div class="  min-h-screen bg-gray-100">
+            <nav class="navbar">
+                <div class="logo">
+                    PassVault
+                </div>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <div class="container mx-auto bg-white shadow-xl rounded-lg p-8 my-3 w-full sm:w-96">
+            <!-- Notes Manager Header -->
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-3">Hello User!!</h1>
+            <p>
+                Welcome to your secure digital vault.
+                Your passwords are safe with us.
+                Let's get started!
+            </p>
+            <br>
+            
+            
+            <!-- Login Form -->
+            
+            <div class="flex justify-center bg-gray-100 max-h-screen">
+                <div id="login-form" class="bg-white text-gray-800 rounded-lg shadow-md p-6 space-y-4 w-full sm:w-96">
+                    <h2 class="form-title font-bold text-2xl text-center">Login to Your Account</h2>
+                    <input type="email" id="login-email" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email">
+                    <input type="password" id="login-password" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
+                    <button id="submit-login" class="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Login*</button>
+                    <br>
+                    <p class="text-center text-sm">*only one user can signup</p>
+                </div>
+            </div>
+            
+            <!-- Signup Form -->
+            <div class="flex justify-center bg-gray-100 max-h-screen">
+                <div id="signup-form" class="bg-white text-gray-800 rounded-lg shadow-md p-6 space-y-4 w-full sm:w-96 hidden">
+                    <h2 class="form-title font-bold text-2xl text-center">Create a New Account</h2>
+                    <input type="email" id="signup-email" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email">
+                    <input type="password" id="signup-password" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
+                    <button id="submit-signup" class="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Signup*</button>
+                    <br>
+                    <p class="text-center text-sm">*signup only for one user</p>
+                </div>
+            </div>
+            
+            <script src="index.js"></script>
+            <body>
+                </html>

@@ -1,0 +1,11 @@
+node_modules/
+fire.js
+package-lock.json
+package.json
+favicon.ico
+.idea/
+../.firebase/
+../.idea/
+../firebase.json
+../node_modules/
+
