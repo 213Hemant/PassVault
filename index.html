@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PassVault - Your Personal Password Manager</title>
         <link rel="stylesheet" href="pass.css">
-        <link rel="stylesheet" href="index.css">
+        <!-- <link rel="stylesheet" href="index.css"> -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script type="module" src="fire.js" defer></script>
         
@@ -20,11 +20,11 @@
                     PassVault
                 </div>
                 <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="container flex flex-col items-center justify-center bg-white shadow-xl rounded-lg p-8 my-3 w-full sm:w-96">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <div class="container mx-auto bg-white shadow-xl rounded-lg p-8 my-3 w-full sm:w-96">
             <!-- Notes Manager Header -->
             <h1 class="text-4xl font-extrabold text-gray-800 mb-3">Hello User!!</h1>
             <p>
@@ -36,23 +36,30 @@
             
             
             <!-- Login Form -->
-            <div id="login-form" class="w-full space-y-6">
-                <h2 class="form-title">Login to Your Account</h2>
-                <input type="email" class="input-custom" placeholder="Email" id="login-email">
-                <input type="password" class="input-custom" placeholder="Password" id="login-password">
-                <button id="submit-login" class="btn-custom w-full py-3">Login</button>
-                <p class="text-center text-sm text-gray-500">Don't have an account? <span id="signup-link" class="text-blue-600 cursor-pointer">Signup here</span></p>
+            
+            <div class="flex justify-center bg-gray-100 max-h-screen">
+                <div id="login-form" class="bg-white text-gray-800 rounded-lg shadow-md p-6 space-y-4 w-full sm:w-96">
+                    <h2 class="form-title font-bold text-2xl text-center">Login to Your Account</h2>
+                    <input type="email" id="login-email" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email">
+                    <input type="password" id="login-password" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
+                    <button id="submit-login" class="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Login*</button>
+                    <br>
+                    <p class="text-center text-sm">*only one user can signup</p>
+                </div>
             </div>
             
             <!-- Signup Form -->
-            <div id="signup-form" class="w-full space-y-6 hidden">
-                <h2 class="form-title">Create a new Account</h2>
-                <input type="email" class="input-custom" placeholder="Email" id="signup-email">
-                <input type="password" class="input-custom" placeholder="Password" id="signup-password">
-                <button id="submit-signup" class="btn-custom w-full py-3">Signup</button>
-                <p class="text-center text-sm text-gray-500">Already have an account? <span id="login-link" class="text-blue-600 cursor-pointer" >Login here</span></p>
+            <div class="flex justify-center bg-gray-100 max-h-screen">
+                <div id="signup-form" class="bg-white text-gray-800 rounded-lg shadow-md p-6 space-y-4 w-full sm:w-96 hidden">
+                    <h2 class="form-title font-bold text-2xl text-center">Create a New Account</h2>
+                    <input type="email" id="signup-email" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email">
+                    <input type="password" id="signup-password" class="w-full p-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
+                    <button id="submit-signup" class="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Signup*</button>
+                </div>
             </div>
+            <br>
+            <p class="text-center text-sm">*signup only for one user</p>
             
-    <script src="index.js"></script>
-    <body>
-        </html>
+            <script src="index.js"></script>
+            <body>
+                </html>
