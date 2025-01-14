@@ -8,16 +8,18 @@
         <link rel="stylesheet" href="pass.css">
         <link rel="stylesheet" href="index.css">
         <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <!-- Main Container -->
-    <div class="  min-h-screen bg-gray-100">
-        <nav class="navbar">
-            <div class="logo">
-                PassVault
-            </div>
-            <ul>
+        <script type="module" src="fire.js" defer></script>
+        
+    </head>
+    
+    <body>
+        <!-- Main Container -->
+        <div class="  min-h-screen bg-gray-100">
+            <nav class="navbar">
+                <div class="logo">
+                    PassVault
+                </div>
+                <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -31,18 +33,14 @@
                 Let's get started!
             </p>
             <br>
-            <!-- Tabs -->
-            <!-- <div class="w-full flex justify-center space-x-10 mb-10">
-                <button id="login-tab" class="btn-custom py-3 px-6 text-lg">Login</button>
-                <button id="signup-tab" class="btn-custom py-3 px-6 text-lg">Signup</button>
-            </div> -->
+            
             
             <!-- Login Form -->
             <div id="login-form" class="w-full space-y-6">
                 <h2 class="form-title">Login to Your Account</h2>
                 <input type="email" class="input-custom" placeholder="Email" id="login-email">
                 <input type="password" class="input-custom" placeholder="Password" id="login-password">
-                <button class="btn-custom w-full py-3">Login</button>
+                <button id="submit-login" class="btn-custom w-full py-3">Login</button>
                 <p class="text-center text-sm text-gray-500">Don't have an account? <span id="signup-link" class="text-blue-600 cursor-pointer">Signup here</span></p>
             </div>
             
@@ -51,26 +49,10 @@
                 <h2 class="form-title">Create a new Account</h2>
                 <input type="email" class="input-custom" placeholder="Email" id="signup-email">
                 <input type="password" class="input-custom" placeholder="Password" id="signup-password">
-                <button class="btn-custom w-full py-3">Signup</button>
+                <button id="submit-signup" class="btn-custom w-full py-3">Signup</button>
                 <p class="text-center text-sm text-gray-500">Already have an account? <span id="login-link" class="text-blue-600 cursor-pointer" >Login here</span></p>
             </div>
             
-            <!-- Notes Section -->
-            <div id="notes-section" class="w-full mt-10 space-y-6 hidden">
-                <h2 class="form-title">Your Notes</h2>
-                <div class="note-card">
-                    <h3 class="font-bold">Note Title</h3>
-                    <p>Here's an example of your note content. You can add more notes as needed!</p>
-                </div>
-                <div class="note-card">
-                    <h3 class="font-bold">Another Note</h3>
-                    <p>This is a sample note for testing. Create and organize your notes!</p>
-                </div>
-                <div class="flex justify-center mt-6">
-                    <button class="btn-custom py-3 px-6">Add New Note</button>
-                </div>
-            </div>
-        </div>
-    </div>
-<body>
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    <body>
+        </html>
